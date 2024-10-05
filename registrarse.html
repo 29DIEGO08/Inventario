@@ -128,10 +128,10 @@
     </div>
     <script>
         function validarContrasenas() {
-            var nombre = document.querySelector('nombre').value;
-            var apellidos = document.querySelector('apellidos').value;
-            var contrasena = document.querySelector('contrasena').value;
-            var confirmarContrasena = document.querySelector('confirmar_contrasena').value;
+            var nombre = document.getElementById('nombre').value;
+            var apellidos = document.getElementById('apellidos').value;
+            var contrasena = document.getElementById('contrasena').value;
+            var confirmarContrasena = document.getElementById('confirmar_contrasena').value;
 
             if (nombre === "" || apellidos === "" || contrasena === "" || confirmarContrasena === "") {
                 alert("Todos los campos deben estar llenos");

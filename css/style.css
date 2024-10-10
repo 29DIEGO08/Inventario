@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: solid;
+    list-style: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto
+    ;
+}
+
+
+
+
+.menu{
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: black;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: rgb(173, 50, 153);
+}
+
+
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+
+
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+
+}
+
+.header-content h1{
+    font-size: 75px;
+    line-height: 8opx;
+    color: rgb(136, 42, 165);
+    text-transform: uppercase;
+    margin-bottom: 35px;
+
+}
+.header-content p{
+    font-size: 16px;
+    color: black;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px, 35px;
+    background-color: blueviolet;
+    color: aliceblue;
+    text-transform: uppercase;
+
+}
+.btn-1:hover{
+    background-color: rgb(79, 22, 184);
+}
+
+.maquillaje{
+    padding: 100px,o;
+    border: pink;
+    position: relative;
+
+}
+.maquillaje-content {
+    text-align: center;
+
+}
+
+.maquillaje-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: purple;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+
+}
+

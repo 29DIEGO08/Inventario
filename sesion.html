@@ -1,0 +1,90 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <style>
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+#error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Iniciar Sesión</h1>
+        <form id="login-form">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+        <p id="error-message"></p>
+    </div>
+
+    <script>// script.js
+        const form = document.getElementById('login-form');
+        const errorMessage = document.getElementById('error-message');
+        
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+        
+            // TO DO: Add your login logic here
+            // For example, you can make an AJAX request to your server
+            // or use a library like Firebase to authenticate users
+        
+            if (username === 'admin' && password === 'password') {
+                // Login successful, redirect to dashboard or whatever
+                window.location.href = 'dashboard.html';
+            } else {
+                errorMessage.textContent = 'Usuario o contraseña incorrectos';
+            }
+        });</script>
+</body>
+</html>

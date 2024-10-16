@@ -5,6 +5,10 @@
     list-style: none;
     background-color: pink;
 }
+.logo{
+    border-radius: 50%;
+    width: 150px;
+}
 
 
 .menu{

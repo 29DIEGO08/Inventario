@@ -1,0 +1,401 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Brochas
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar nav {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .breadcrumb {
+            font-size: 14px;
+            color: #ff6f61;
+            margin: 20px;
+            text-align: center;
+        }
+        .breadcrumb a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffe6e6; /* Light pink background */
+        }
+        .content {
+            width: 100%;
+            max-width: 1200px;
+        }
+        .content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .content .results {
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content .sort {
+            font-size: 14px;
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .content .sort select {
+            border: 1px solid #ddd;
+            padding: 5px;
+            font-size: 14px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product {
+            width: 23%;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            background-color: #fff; /* White background for product cards */
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 14px;
+            color: #666;
+            margin: 10px 0;
+        }
+        .product .price {
+            font-size: 18px;
+            color: #ff6f61;
+            margin: 10px 0;
+        }
+        .product .add-to-cart {
+            font-size: 14px;
+            color: #ff6f61;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+            }
+            .product {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    <script>
+        function sortProducts() {
+            const productsContainer = document.querySelector('.products');
+            const products = Array.from(productsContainer.children);
+            const sortBy = document.querySelector('.sort select').value;
+
+            if (sortBy === 'price-asc') {
+                products.sort((a, b) => {
+                    const priceA = parseFloat(a.querySelector('.price').textContent.replace('$', '').replace('.', '').replace(',', '.'));
+                    const priceB = parseFloat(b.querySelector('.price').textContent.replace('$', '').replace('.', '').replace(',', '.'));
+                    return priceA - priceB;
+                });
+            }
+
+            products.forEach(product => productsContainer.appendChild(product));
+        }
+    </script>
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <a href="#">
+                Inicio
+            </a>
+            <a href="#">
+                Tienda
+            </a>
+            <a href="#">
+                Cuidado Facial
+            </a>
+            <a href="#">
+                Contacto
+            </a>
+        </nav>
+    </header>
+    <nav class="breadcrumb">
+        <a href="#">
+            Inicio
+        </a>
+        /
+        <a href="#">
+            Tienda
+        </a>
+        /
+        <a href="#">
+            Cuidado Facial
+        </a>
+        / Brochas
+    </nav>
+    <main class="container">
+        <section class="content">
+            <h1>
+                Brochas
+            </h1>
+            <div class="results">
+                Mostrando 1–12 de 21 resultados
+            </div>
+            <div class="sort">
+                <label for="sort">
+                    Ordenar por:
+                </label>
+                <select id="sort" onchange="sortProducts()">
+                    <option value="default">
+                        Orden por defecto
+                    </option>
+                    <option value="price-asc">
+                        Precio: menor a mayor
+                    </option>
+                </select>
+            </div>
+            <section class="products">
+                <article class="product">
+                    <img alt="Brocha para Base" height="300"
+                        src="https://sevilla.abc.es/estilo/bulevarsur/wp-content/uploads/2018/10/brochas-kabuki-plana.jpg" width="200" />
+                    <h3>
+                        Brochas
+                    </h3>
+                    <p>
+                        Brocha para Base
+                    </p>
+                    <div class="price">
+                        $ 25.000
+                    </div>
+                    <div class="add-to-cart">
+                        Añadir al carrito
+                    </div>
+                </article>
+                <article class="product">
+                    <img alt="Brocha para Polvo" height="300"
+                        src="https://etniacosmetics.vteximg.com.br/arquivos/ids/155824-600-600/ET0123.jpg?v=637430358738500000" width="200" />
+                    <h3>
+                        Brochas
+                    </h3>
+                    <p>
+                        Brocha para Polvo
+                    </p>
+                    <div class="price">
+                        $ 20.000
+                    </div>
+                    <div class="add-to-cart">
+                        Añadir al carrito
+                    </div>
+                </article>
+                <article class="product">
+                    <img alt="Brocha para Rubor" height="300"
+                        src="https://prebel.vtexassets.com/arquivos/ids/156540/Maquillaje-Rostro-Accesorios_PB0045754_SinColor_1.jpg?v=636906833660730000" width="200" />
+                    <h3>
+                        Brochas
+                    </h3>
+                    <p>
+                        Brocha para Rubor
+                    </p>
+                    <div class="price">
+                        $ 18.000
+                    </div>
+                    <div class="add-to-cart">
+                        Añadir al carrito
+                    </div>
+                </article>
+                <article class="product">
+                    <img alt="Brocha para Contorno" height="300"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWYfnjHmJ3qNrLCCziBz23QLD_OQf366odow&s" width="200" />
+                    <h3>
+                        Brochas
+                    </h3>
+                    <p>
+                        Brocha para Contorno
+                    </p>
+                    <div class="price">
+                        $ 22.000
+                    </div>
+                    <div class="add-to-cart">
+                        Añadir al carrito
+                    </div>
+                </article>
+                <article class="product">
+                    <img alt="Brocha para Iluminador" height="300"
+                        src="https://blushbar.vtexassets.com/arquivos/ids/169266/Dise%C3%B1o-sin-titulo--37-.jpg?v=636499069902300000" width="200" />
+                    <h3>
+                        Brochas
+                    </h3>
+                    <p>
+                        Brocha para Iluminador
+                    </p>
+                    <div class="price">
+                        $ 19.000
+                    </div>
+                    <div class="add-to-cart">
+                        Añadir al carrito
+                    </div>
+                </article>
+                <article class="product">
+                    <img alt="Brocha para Sombras" height="300"
+                        src="https://www.milanicosmetics.com.co/wp-content/uploads/2020/10/MBR_Brush_551.png" width="200" />
+                    <h3>
+                        Brochas
+                    </h3>
+                    <p>
+                        Brocha para Sombras
+                    </p>
+                    <div class="price">
+                        $ 15.000
+                    </div>
+                    <div class="add-to-cart">
+                        Añadir al carrito
+                    </div>
+                </article>
+                <article class="product">
+                    <img alt="Brocha para Cejas" height="300"
+                        src="https://laboratoriossmart.com/domicilios/wp-content/uploads/2020/05/16.jpg" width="200" />
+                    <h3>
+                        Brochas
+                    </h3>
+                    <p>
+                        Brocha para Cejas
+                    </p>
+                    <div class="price">
+                        $ 12.000
+                    </div>
+                    <div class="add-to-cart">
+                        Añadir al carrito
+                    </div>
+                </article>
+                <article class="product">
+                    <img alt="Brocha para Labios" height="300"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhmWwLuergn3XjNpqtZQdrgbkAPHE932pBeQ&s" width="200" />
+                    <h3>
+                        Brochas
+                    </h3>
+                    <p>
+                        Brocha para Labios
+                    </p>
+                    <div class="price">
+                        $ 10.000
+                    </div>
+                    <div class="add-to-cart">
+                        Añadir al carrito
+                    </div>
+                </article>
+                <article class="product">
+                    <img alt="Brocha para Detalles" height="300"
+                        src="https://maquillajetrendyshop.com/wp-content/uploads/2023/08/BROCHA-INDIVIDUAL-DETALLES-MINI-P207.jpg" width="200" />
+                    <h3>
+                        Brochas
+                    </h3>
+                    <p>
+                        Brocha para Detalles
+                    </p>
+                    <div class="price">
+                        $ 14.000
+                    </div>
+                    <div class="add-to-cart">
+                        Añadir al carrito
+                    </div>
+                </article>
+                <article class="product">
+                    <img alt="Brocha para Corrector" height="300"
+                        src="https://maquillajetrendyshop.com/wp-content/uploads/2023/08/BROCHA-INDIVIDUAL-CORRECTOR-MINI-P210.jpg" width="200" />
+                    <h3>
+                        Brochas
+                    </h3>
+                    <p>
+                        Brocha para Corrector
+                    </p>
+                    <div class="price">
+                        $ 16.000
+                    </div>
+                    <div class="add-to-cart">
+                        Añadir al carrito
+                    </div>
+                </article>
+                <article class="product">
+                    <img alt="Brocha para Mezclar" height="300"
+                        src="https://madeira.com.co/cdn/shop/products/079625017052_2_1200x.jpg?v=1623629109" width="200" />
+                    <h3>
+                        Brochas
+                    </h3>
+                    <p>
+                        Brocha para Mezclar
+                    </p>
+                    <div class="price">
+                        $ 17.000
+                    </div>
+                    <div class="add-to-cart">
+                        Añadir al carrito
+                    </div>
+                </article>
+                <article class="product">
+                    <img alt="Brocha para Contorno de Nariz" height="300"
+                        src="https://maquillajetrendyshop.com/wp-content/uploads/2023/08/BROCHA-INDIVIDUAL-CONTORNO-NARIZ-P113.jpg" width="200" />
+                    <h3>
+                        Brochas
+                    </h3>
+                    <p>
+                        Brocha para Contorno de Nariz
+                    </p>
+                    <div class="price">
+                        $ 13.000
+                    </div>
+                    <div class="add-to-cart">
+                        Añadir al carrito
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

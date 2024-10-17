@@ -1,0 +1,189 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Pasarela de Pagos
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #ffe6e6, #fff);
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .navbar nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar .cart-icon {
+            color: #f2f2f2;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-group .expiry-date {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-group .expiry-date input {
+            width: 48%;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #e65c50;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <a href="#">
+                Inicio
+            </a>
+            <a href="#">
+                Labios
+            </a>
+            <a href="#">
+                Brochas
+            </a>
+            <a href="#">
+                Cejas
+            </a>
+            <a href="#">
+                Ojos
+            </a>
+            <a href="#">
+                Cuidado Facial
+            </a>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+    <main class="container">
+        <h1>
+            Pasarela de Pagos
+        </h1>
+        <form>
+            <div class="form-group">
+                <label for="cardholder-name">
+                    Nombre del Titular
+                </label>
+                <input id="cardholder-name" name="cardholder-name" required="" type="text" />
+            </div>
+            <div class="form-group">
+                <label for="card-number">
+                    Número de Tarjeta
+                </label>
+                <input id="card-number" name="card-number" required="" type="text" />
+            </div>
+            <div class="form-group expiry-date">
+                <div>
+                    <label for="expiry-month">
+                        Mes de Expiración
+                    </label>
+                    <input id="expiry-month" name="expiry-month" required="" type="text" />
+                </div>
+                <div>
+                    <label for="expiry-year">
+                        Año de Expiración
+                    </label>
+                    <input id="expiry-year" name="expiry-year" required="" type="text" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cvv">
+                    CVV
+                </label>
+                <input id="cvv" name="cvv" required="" type="text" />
+            </div>
+            <button class="btn" type="submit">
+                Pagar
+            </button>
+        </form>
+    </main>
+</body>
+
+</html>

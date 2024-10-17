@@ -17,6 +17,13 @@
             background-color: #333;
             overflow: hidden;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .navbar nav {
+            display: flex;
             justify-content: center;
         }
 
@@ -32,6 +39,12 @@
         .navbar a:hover {
             background-color: #ddd;
             color: black;
+        }
+
+        .navbar .cart-icon {
+            color: #f2f2f2;
+            font-size: 20px;
+            cursor: pointer;
         }
 
         .breadcrumb {
@@ -55,7 +68,8 @@
             flex-direction: column;
             align-items: center;
             padding: 20px;
-            background-color: #ffe6e6; /* Light pink background */
+            background-color: #ffe6e6;
+            /* Light pink background */
         }
 
         .content {
@@ -101,7 +115,8 @@
             text-align: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s;
-            background-color: #fff; /* White background for product cards */
+            background-color: #fff;
+            /* White background for product cards */
         }
 
         .product:hover {
@@ -163,42 +178,54 @@
 
             products.forEach(product => productsContainer.appendChild(product));
         }
+
     </script>
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="#">
-            Inicio
-        </a>
-        <a href="#">
-            Tienda
-        </a>
-        <a href="#">
-            Cuidado Facial
-        </a>
-        <a href="#">
-            Contacto
-        </a>
-    </div>
-    <div class="breadcrumb">
-        <a href="#">
-            Inicio
-        </a>
-        /
-        <a href="#">
-            Tienda
-        </a>
-        /
-        <a href="#">
-            Cuidado Facial
-        </a>
-        / Ojos
-    </div>
-    <div class="container">
-        <div class="content">
-            <h1>
+    <header class="navbar">
+        <nav>
+            <a href="#">
+                Inicio
+            </a>
+            <a href="#">
+                Labios
+            </a>
+            <a href="#">
+                Brochas
+            </a>
+            <a href="#">
+                Cejas
+            </a>
+            <a href="#">
                 Ojos
+            </a>
+            <a href="#">
+                Cuidado Facial
+            </a>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+    <nav class="breadcrumb">
+        <a href="#">
+            Inicio
+        </a>
+        /
+        <a href="#">
+            Tienda
+        </a>
+        /
+        <a href="#">
+            Cuidado Facial
+        </a>
+        / Cuidado Facial
+    </nav>
+    <main class="container">
+        <section class="content">
+            <h1>
+                Cuidado Facial
             </h1>
             <div class="results">
                 Mostrando 1–12 de 21 resultados
@@ -218,7 +245,8 @@
             </div>
             <div class="products">
                 <div class="product">
-                    <img alt="Sombra de Ojos Nude" height="300" src="https://www.cosmeticosalpormayor.com/cdn/shop/products/BEAUTYCREATIONS_NXE15_NUDEX-SHADOWPALETTEDISPLAY12UNITS_2_1024x1024.jpg?v=1684426935"
+                    <img alt="Sombra de Ojos Nude" height="300"
+                        src="https://www.cosmeticosalpormayor.com/cdn/shop/products/BEAUTYCREATIONS_NXE15_NUDEX-SHADOWPALETTEDISPLAY12UNITS_2_1024x1024.jpg?v=1684426935"
                         width="200" />
                     <h3>
                         Ojos
@@ -235,7 +263,8 @@
                 </div>
                 <div class="product">
                     <img alt="Delineador Líquido Negro" height="300"
-                        src="https://lignedor.com.co/wp-content/uploads/2021/02/Delineador-liquido-con-Caja-1.jpg" width="200" />
+                        src="https://lignedor.com.co/wp-content/uploads/2021/02/Delineador-liquido-con-Caja-1.jpg"
+                        width="200" />
                     <h3>
                         Ojos
                     </h3>
@@ -251,7 +280,8 @@
                 </div>
                 <div class="product">
                     <img alt="Máscara de Pestañas Volumen" height="300"
-                        src="https://camaleoncosmetics.com/813-large_default/mascara-pestanas-volumen.jpg" width="200" />
+                        src="https://camaleoncosmetics.com/813-large_default/mascara-pestanas-volumen.jpg"
+                        width="200" />
                     <h3>
                         Ojos
                     </h3>
@@ -266,7 +296,8 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img alt="Lápiz de Ojos Marrón" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKCSg-kufsFKfZ9Zcx61pjIndEKjoEWHenzQ&s"
+                    <img alt="Lápiz de Ojos Marrón" height="300"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKCSg-kufsFKfZ9Zcx61pjIndEKjoEWHenzQ&s"
                         width="200" />
                     <h3>
                         Ojos
@@ -298,7 +329,8 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img alt="Delineador en Gel" height="300" src="https://i0.wp.com/www.mykcosmetics.co/wp-content/uploads/2023/10/GEL1_61121.png"
+                    <img alt="Delineador en Gel" height="300"
+                        src="https://i0.wp.com/www.mykcosmetics.co/wp-content/uploads/2023/10/GEL1_61121.png"
                         width="200" />
                     <h3>
                         Ojos
@@ -315,7 +347,8 @@
                 </div>
                 <div class="product">
                     <img alt="Máscara de Pestañas Waterproof" height="300"
-                        src="https://vader-prod.s3.amazonaws.com/1714736306-mascara-pestanas-6634cc8783b8e.jpg" width="200" />
+                        src="https://vader-prod.s3.amazonaws.com/1714736306-mascara-pestanas-6634cc8783b8e.jpg"
+                        width="200" />
                     <h3>
                         Ojos
                     </h3>
@@ -330,8 +363,8 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img alt="Lápiz de Ojos Negro" height="300" src="https://cibermake.com/wp-content/uploads/2024/04/Lapiznegro-bloomshell.jpg"
-                        width="200" />
+                    <img alt="Lápiz de Ojos Negro" height="300"
+                        src="https://cibermake.com/wp-content/uploads/2024/04/Lapiznegro-bloomshell.jpg" width="200" />
                     <h3>
                         Ojos
                     </h3>
@@ -346,7 +379,8 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img alt="Sombra de Ojos Mate" height="300" src="https://www.bysmaquillaje.es/media/catalog/product/p/a/palette-5-fards-paupieres.jpg"
+                    <img alt="Sombra de Ojos Mate" height="300"
+                        src="https://www.bysmaquillaje.es/media/catalog/product/p/a/palette-5-fards-paupieres.jpg"
                         width="200" />
                     <h3>
                         Ojos
@@ -379,7 +413,8 @@
                 </div>
                 <div class="product">
                     <img alt="Máscara de Pestañas Alargadora" height="300"
-                        src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/mby/mby00750/y/16.jpg" width="200" />
+                        src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/mby/mby00750/y/16.jpg"
+                        width="200" />
                     <h3>
                         Ojos
                     </h3>
@@ -394,7 +429,8 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img alt="Lápiz de Ojos Verde" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDMcKIYwDOCf9JX4mUk-gpk_y--zFZQB_AUQ&s"
+                    <img alt="Lápiz de Ojos Verde" height="300"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDMcKIYwDOCf9JX4mUk-gpk_y--zFZQB_AUQ&s"
                         width="200" />
                     <h3>
                         Ojos
@@ -410,8 +446,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            </div>
+            </div>
 </body>
 
 </html>

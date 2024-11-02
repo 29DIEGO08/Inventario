@@ -1,131 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    width: 80%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-.left-section, .right-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
+        .left-section,
+        .right-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
 
-.left-section {
-    width: 100%;
-    text-align: center;
-}
+        .left-section {
+            width: 100%;
+            text-align: center;
+        }
 
-.breadcrumb {
-    font-size: 14px;
-    color: #666;
-}
+        .breadcrumb {
+            font-size: 14px;
+            color: #666;
+        }
 
-.free-shipping {
-    background-color: #ffe6cc;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        .free-shipping {
+            background-color: #ffe6cc;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.free-shipping i {
-    margin-right: 10px;
-}
+        .free-shipping i {
+            margin-right: 10px;
+        }
 
-.cart-empty {
-    text-align: center;
-    margin: 40px 0;
-}
+        .cart-empty {
+            text-align: center;
+            margin: 40px 0;
+        }
 
-.cart-empty i {
-    font-size: 50px;
-    color: #ccc;
-}
+        .cart-empty i {
+            font-size: 50px;
+            color: #ccc;
+        }
 
-.cart-empty p {
-    font-size: 18px;
-    color: #666;
-}
+        .cart-empty p {
+            font-size: 18px;
+            color: #666;
+        }
 
-.cart-empty button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+        .cart-empty button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-.shop-btn {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #ccc;
-}
+        .shop-btn {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #ccc;
+        }
 
-.suggested-items {
-    margin-top: 20px;
-}
+        .suggested-items {
+            margin-top: 20px;
+        }
 
-.suggested-items h2 {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
+        .suggested-items h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
 
-.item {
-    display: inline-block;
-    width: 23%;
-    margin-right: 1%;
-    vertical-align: top;
-}
+        .item {
+            display: inline-block;
+            width: 23%;
+            margin-right: 1%;
+            vertical-align: top;
+        }
 
-.item img {
-    width: 100%;
-    border-radius: 5px;
-}
+        .item img {
+            width: 100%;
+            border-radius: 5px;
+        }
 
-.item p {
-    font-size: 14px;
-    color: #666;
-}
+        .item p {
+            font-size: 14px;
+            color: #666;
+        }
 
-.item .price {
-    font-size: 18px;
-    color: #ff6600;
-}
+        .item .price {
+            font-size: 18px;
+            color: #ff6600;
+        }
 
-.item .sales {
-    font-size: 12px;
-    color: #999;
-}
-
+        .item .sales {
+            font-size: 12px;
+            color: #999;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="left-section">
@@ -140,7 +142,7 @@ body {
                 <i class="fas fa-shopping-cart"></i>
                 <p>
                     El carrito de compras está vacío
-                    <br/>
+                    <br />
                     Agrega tus artículos favoritos.
                 </p>
             </div>
@@ -149,7 +151,9 @@ body {
                     Artículos que tal vez quieras agregar
                 </h2>
                 <div class="item">
-                    <img alt="Paleta de sombras de ojos" height="200" src="https://storage.googleapis.com/a1aa/image/DGWApUFV6xodMtR10CYWen31r85MKyHyEbPnWH2OuCNfzglTA.jpg" width="200"/>
+                    <img alt="Paleta de sombras de ojos" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/DGWApUFV6xodMtR10CYWen31r85MKyHyEbPnWH2OuCNfzglTA.jpg"
+                        width="200" />
                     <p>
                         Paleta de sombras de ojos
                     </p>
@@ -177,19 +181,20 @@ body {
     </div>
     <script>
         function updateTotalItems() {
-                 const items = document.querySelectorAll('.suggested-items .item');
-                 const totalItems = items.length;
-                 document.getElementById('total-items').innerText = `Total (${totalItems} artículos)`;
-     
-                 let totalPrice = 0;
-                 items.forEach(item => {
-                     const priceText = item.querySelector('.price').innerText;
-                     const price = parseFloat(priceText.replace('$', '').replace('.', '').replace(',', '.'));
-                     totalPrice += price;
-                 });
-                 document.getElementById('total-price').innerText = `$${totalPrice.toLocaleString('es-ES')}`;
-             }
-             window.onload = updateTotalItems;
-       </script>
+            const items = document.querySelectorAll('.suggested-items .item');
+            const totalItems = items.length;
+            document.getElementById('total-items').innerText = `Total (${totalItems} artículos)`;
+
+            let totalPrice = 0;
+            items.forEach(item => {
+                const priceText = item.querySelector('.price').innerText;
+                const price = parseFloat(priceText.replace('$', '').replace('.', '').replace(',', '.'));
+                totalPrice += price;
+            });
+            document.getElementById('total-price').innerText = `$${totalPrice.toLocaleString('es-ES')}`;
+        }
+        window.onload = updateTotalItems;
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #e86b85;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(90vh - 50px); /* Adjusted for reduced navbar height */
+    flex-direction: row; /* Default to row for desktop view */
+}
+.profile {
+    text-align: center;
+    margin-right: 70px; /* Increased by 40% from 50px */
+}
+.profile-image {
+    width: 280px; /* Increased by 40% from 200px */
+    height: 280px; /* Increased by 40% from 200px */
+    border-radius: 50%;
+    background-image: url('https://placehold.co/280x280?text=Profile+Image');
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    alt: "Imagen de perfil"; /* Added alt attribute */
+}
+.profile-text {
+    font-weight: bold;
+    margin-top: 14px; /* Increased by 40% from 10px */
+    font-size: 1.4em; /* Increased by 40% */
+}
+.configuracion {
+    text-align: center; /* Centered the content */
+}
+.configuracion h2 {
+    color: navy;
+    font-weight: bold;
+    font-size: 1.4em; /* Increased by 40% */
+}
+.configuracion ul {
+    list-style-type: none;
+    padding: 0;
+}
+.configuracion ul li {
+    margin: 14px 0; /* Increased by 40% from 10px */
+    font-weight: bold;
+    font-size: 1.4em; /* Increased by 40% */
+}
+.configuracion ul li a {
+    text-decoration: none;
+    color: black;
+}
+.configuracion ul li a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        align-items: center; /* Center align items */
+        padding-top: 170px; /* Add 15px space between navbar and content */
+    }
+    .profile {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add margin for spacing in mobile view */
+        margin-top: 20px; /* Add margin to prevent profile image from overlapping navbar */
+    }
+}

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-size: 105%;
+    /* Increased font size by 5% */
+}
+
+.header {
+    margin-top: 21px;
+    /* Increased margin by 5% */
+}
+
+.header img {
+    width: 105px;
+    /* Increased size by 5% */
+    height: 105px;
+    /* Increased size by 5% */
+}
+
+.content {
+    margin-top: 52.5px;
+    /* Increased margin by 5% */
+}
+
+.content h2 {
+    font-size: 37.8px;
+    /* Increased font size by 5% */
+    color: #333333;
+}
+
+.content p {
+    font-size: 14.7px;
+    /* Increased font size by 5% */
+    color: #666666;
+}
+
+.card {
+    display: inline-block;
+    border: 1px solid #007bff;
+    border-radius: 10.5px;
+    /* Increased border radius by 5% */
+    padding: 21px;
+    /* Increased padding by 5% */
+    margin-top: 21px;
+    /* Increased margin by 5% */
+    width: 315px;
+    /* Increased width by 5% */
+}
+
+.card img {
+    width: 52.5px;
+    /* Increased size by 5% */
+    height: 52.5px;
+    /* Increased size by 5% */
+    margin: 5.25px;
+    /* Increased margin by 5% */
+}
+
+.card h3 {
+    color: #007bff;
+    font-size: 18.9px;
+    /* Increased font size by 5% */
+    margin: 10.5px 0;
+    /* Increased margin by 5% */
+}
+
+.card select {
+    width: 100%;
+    padding: 5.25px;
+    /* Increased padding by 5% */
+    border: 1px solid #cccccc;
+    border-radius: 5.25px;
+    /* Increased border radius by 5% */
+}
+
+.card button {
+    margin-top: 21px;
+    /* Increased margin to move button further down */
+    padding: 12px 24px;
+    /* Increased padding by 20% */
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5.25px;
+    /* Increased border radius by 5% */
+    cursor: pointer;
+    font-size: 18px;
+    /* Increased font size by 20% */
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}

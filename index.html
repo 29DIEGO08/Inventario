@@ -7,241 +7,8 @@
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fce4ec;
-        }
-
-        .header {
-            background-color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #f8bbd0;
-        }
-
-        .header .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .header .logo span {
-            font-size: 14px;
-            display: block;
-        }
-
-        .header .search-bar {
-            display: flex;
-            align-items: center;
-            background-color: #f8bbd0;
-            padding: 5px 10px;
-            border-radius: 20px;
-        }
-
-        .header .search-bar input {
-            border: none;
-            background: none;
-            outline: none;
-            padding: 5px;
-            font-size: 16px;
-        }
-
-        .header .search-bar i {
-            color: #fff;
-            margin-left: 10px;
-        }
-
-        .header .cart {
-            font-size: 24px;
-            color: #f06292;
-        }
-
-        .announcement {
-            text-align: right;
-            padding: 5px 20px;
-            font-size: 12px;
-            color: #f06292;
-        }
-
-        .main-banner {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-
-        .main-banner img {
-            width: 100%;
-            height: auto;
-        }
-
-        .main-banner .text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .main-banner .text h1 {
-            font-size: 36px;
-            margin: 0;
-        }
-
-        .main-banner .text h2 {
-            font-size: 24px;
-            margin: 0;
-        }
-
-        .main-banner .text p {
-            font-size: 18px;
-            margin: 10px 0 0;
-        }
-
-        .categories {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            background-color: #fff;
-        }
-
-        .categories .category {
-            text-align: center;
-            padding: 10px;
-            background-color: #fce4ec;
-            border-radius: 10px;
-            width: 45%;
-            transform: scale(0.5);
-            /* Reduce size to 50% */
-        }
-
-        .categories .category img {
-            width: 80%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .categories .category h3 {
-            margin: 10px 0 0;
-            font-size: 30.6px;
-            /* 70% larger than 18px */
-            color: #f06292;
-        }
-
-        .footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #fff;
-            border-top: 1px solid #f8bbd0;
-            display: flex;
-            justify-content: space-around;
-            padding: 10px 0;
-        }
-
-        .footer .footer-item {
-            text-align: center;
-            color: #f06292;
-        }
-
-        .footer .footer-item i {
-            font-size: 24px;
-        }
-
-        .footer .footer-item p {
-            margin: 5px 0 0;
-            font-size: 12px;
-        }
-
-        .footer .footer-item .badge {
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            background-color: #f06292;
-            color: #fff;
-            border-radius: 50%;
-            padding: 2px 5px;
-            font-size: 10px;
-        }
-
-        .carousel {
-            position: relative;
-            width: 80%;
-            margin: 20px auto;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .carousel img {
-            width: 120%;
-            /* Increased width */
-            height: 200px;
-            /* Adjusted height */
-        }
-
-        .carousel-inner {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-
-        .carousel-inner img {
-            width: 120%;
-            /* Increased width */
-            height: 200px;
-            /* Adjusted height */
-        }
-
-        .carousel-control {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-
-        .carousel-control.prev {
-            left: 10px;
-        }
-
-        .carousel-control.next {
-            right: 10px;
-        }
-    </style>
-    <script>
-        let currentIndex = 0;
-
-        function showSlide(index) {
-            const slides = document.querySelectorAll('.carousel-inner img');
-            if (index >= slides.length) {
-                currentIndex = 0;
-            } else if (index < 0) {
-                currentIndex = slides.length - 1;
-            } else {
-                currentIndex = index;
-            }
-            const offset = -currentIndex * 100;
-            document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
-        }
-
-        function nextSlide() {
-            showSlide(currentIndex + 1);
-        }
-
-        function prevSlide() {
-            showSlide(currentIndex - 1);
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            showSlide(currentIndex);
-            document.querySelector('.carousel-control.next').addEventListener('click', nextSlide);
-            document.querySelector('.carousel-control.prev').addEventListener('click', prevSlide);
-        });
-    </script>
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
@@ -353,15 +120,15 @@
         <div class="footer-item">
             <i class="fas fa-home">
             </i>
-            <p>
-                Inicio
-            </p>
+            
+                <a href="inicio.html"></a>
+            
         </div>
         <div class="footer-item">
             <i class="fas fa-tags">
             </i>
             <p>
-                Ofertas
+                
             </p>
         </div>
         <div class="footer-item">
@@ -374,16 +141,16 @@
         <div class="footer-item">
             <i class="fas fa-user">
             </i>
-            <p>
-                Cuenta
-            </p>
+            
+                <a href="perfil.html"></a>
+            
         </div>
         <div class="footer-item">
             <i class="fas fa-shopping-cart">
             </i>
-            <p>
-                Carrito
-            </p>
+            
+                <a href="carrito.html"></a>
+            
             <span class="badge">
                 1
             </span>
@@ -396,5 +163,7 @@
             </p>
         </div>
     </div>
+
+    <script src="js/index.js"></script>
 </body>
-</h
+</html>

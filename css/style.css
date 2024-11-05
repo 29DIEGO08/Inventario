@@ -1,137 +1,197 @@
-*{
-  
-    box-sizing: border-box;
-    text-decoration: solid;
-    list-style: none;
-    background-color: pink;
-}
-.logo{
-    border-radius: 50%;
-    width: 150px;
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fce4ec;
 }
 
+.header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f8bbd0;
+}
 
-.menu{
-    top: 0;
-    left: 0;
-    right: 0;
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .logo span {
+    font-size: 14px;
+    display: block;
+}
+
+.header .search-bar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
- 
-.menu .navbar ul li{
-    position: relative;
-    float: left;
-
+    background-color: #f8bbd0;
+    padding: 5px 10px;
+    border-radius: 20px;
 }
 
-.menu .navbar ul li a{
-    font-size: 18px;
-    padding: 20px;
-    color: black;
-    display: block;
-    font-weight: 600;
-}
-
-.menu .navbar ul li a:hover{
-    color: rgb(173, 50, 153);
-}
-
-
-
-#menu{
-    display: none;
-}
-
-.menu-icono{
-    width: 25px;
-
-
-}
-
-.menu label{
-    cursor: pointer;
-    display: none;
-}
-
-.header-content {
-    text-align: center;
-
-}
-
-.header-content h1{
-    font-size: 75px;
-    line-height: 8opx;
-    color: rgb(136, 42, 165);
-    text-transform: uppercase;
-    margin-bottom: 35px;
-
-}
-.header-content p{
+.header .search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px;
     font-size: 16px;
-    color: black;
-    padding: 0 250px;
-    margin-bottom: 25px;
 }
 
-.btn-1{
-    display: inline-block;
-    padding: 11px, 35px;
-    color: aliceblue;
-    text-transform: uppercase;
-
-}
-.btn-1:hover{
-    background-color: rgb(79, 22, 184);
+.header .search-bar i {
+    color: #fff;
+    margin-left: 10px;
 }
 
-.maquillaje{
-    padding: 100px,o;
-    border: pink;
+.header .cart {
+    font-size: 24px;
+    color: #f06292;
+}
+
+.announcement {
+    text-align: right;
+    padding: 5px 20px;
+    font-size: 12px;
+    color: #f06292;
+}
+
+.main-banner {
     position: relative;
-
-}
-.maquillaje-content {
     text-align: center;
-
+    color: white;
 }
 
-.maquillaje-content h2{
-    font-size: 55px;
-    line-height: 70px;
-    color: purple;
-    text-transform: uppercase;
-    padding: 0 250px;
-    margin-bottom: 15px;
-
-}
-
-.maquillage-group{
-
-    width: 23%;
-    border: 1px solid #ddd;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-    background-color: #fff;
-    /* display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px; */
-}
-
-.maquillaje-1{
-    padding: 0 25px;
-}
-.maquillaje-img1{
-    max-width: 100%;
+.main-banner img {
+    width: 100%;
     height: auto;
-
 }
 
-.maquillaje-img{
+.main-banner .text {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-banner .text h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.main-banner .text h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.main-banner .text p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.categories .category {
+    text-align: center;
+    padding: 10px;
+    background-color: #fce4ec;
+    border-radius: 10px;
+    width: 45%;
+    transform: scale(0.5);
+}
+
+.categories .category img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.categories .category h3 {
+    margin: 10px 0 0;
+    font-size: 30.6px;
+    color: #f06292;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #f8bbd0;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.footer .footer-item {
+    text-align: center;
+    color: #f06292;
+}
+
+.footer .footer-item i {
+    font-size: 24px;
+}
+
+.footer .footer-item p {
+    margin: 5px 0 0;
+    font-size: 12px;
+}
+
+.footer .footer-item .badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #f06292;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 10px;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel img {
+    width: 120%;
+    height: 200px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-inner img {
+    width: 120%;
+    height: 200px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
 }

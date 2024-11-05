@@ -1,99 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agregar Producto</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: white;
-            color: #e86b85;
-        }
-
-        .navbar {
-            background-color: #e86b85;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        .navbar a:hover {
-            text-decoration: underline;
-        }
-
-        .navbar img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
-
-        .container {
-            text-align: center;
-            padding: 50px;
-        }
-
-        .container h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        .form-group {
-            margin: 20px 0;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .form-group input {
-            width: 300px;
-            padding: 10px;
-            border-radius: 20px;
-            border: none;
-            background-color: #ededed;
-        }
-
-        .form-group input[type="file"] {
-            width: 320px;
-        }
-
-        .form-group input[type="submit"] {
-            background-color: #e86b85;
-            color: white;
-            cursor: pointer;
-            width: 150px;
-        }
-
-        .form-group input[type="submit"]:hover {
-            background-color: #3B5BD6;
-        }
-
-        .form-row {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .form-column {
-            flex: 1;
-            min-width: 300px;
-            max-width: 400px;
-            padding: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/agregarPro.css">
 
 </head>
 
@@ -104,10 +17,10 @@
                 src="https://storage.googleapis.com/a1aa/image/h5DTKewWp2QLCyeVdoHlSZsRuuhpHFxwY6doOcHixNrecLFnA.jpg"
                 width="50" />
         </a>
-        <a href="#">
+        <a href="perfil.html">
             PERFIL
         </a>
-        <a href="#">
+        <a href="controlpro.htm">
             PANEL DE CONTROL
         </a>
         <a href="#">
@@ -137,7 +50,7 @@
                         <label for="cantidad">
                             Cantidad
                         </label>
-                        <input id="cantidad" name="cantidad" type="text" />
+                        <input id="cantidad" name="cantidad" type="number" />
                     </div>
                     <div class="form-group">
                         <label for="categoria">
@@ -151,7 +64,7 @@
                         <label for="precio">
                             Precio Del Producto
                         </label>
-                        <input id="precio" name="precio" type="text" />
+                        <input id="precio" name="precio" type="number" />
                     </div>
                     <div class="form-group">
                         <label for="fecha">

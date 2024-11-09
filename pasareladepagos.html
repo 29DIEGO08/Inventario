@@ -1,0 +1,83 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Pasarela de Pagos
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/pasarelaDePagos.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <a href="index.html">
+                Inicio
+            </a>
+            <a href="labios.html">
+                Labios
+            </a>
+            <a href="brochas.html">
+                Brochas
+            </a>
+            <a href="cejas.html">
+                Cejas
+            </a>
+            <a href="ojos.html">
+                Ojos
+            </a>
+            <a href="cuidadoFacial.html">
+                Cuidado Facial
+            </a>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+    <main class="container">
+        <h1>
+            Pasarela de Pagos
+        </h1>
+        <form>
+            <div class="form-group">
+                <label for="cardholder-name">
+                    Nombre del Titular
+                </label>
+                <input id="cardholder-name" name="cardholder-name" required="" type="text" />
+            </div>
+            <div class="form-group">
+                <label for="card-number">
+                    Número de Tarjeta
+                </label>
+                <input id="card-number" name="card-number" required="" type="text" />
+            </div>
+            <div class="form-group expiry-date">
+                <div>
+                    <label for="expiry-month">
+                        Mes de Expiración
+                    </label>
+                    <input id="expiry-month" name="expiry-month" required="" type="text" />
+                </div>
+                <div>
+                    <label for="expiry-year">
+                        Año de Expiración
+                    </label>
+                    <input id="expiry-year" name="expiry-year" required="" type="text" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cvv">
+                    CVV
+                </label>
+                <input id="cvv" name="cvv" required="" type="text" />
+            </div>
+            <button class="btn" type="submit">
+                Pagar
+            </button>
+        </form>
+    </main>
+</body>
+
+</html>

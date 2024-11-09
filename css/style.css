@@ -131,3 +131,19 @@
     top: 0;
     right: 0;
 }
+.container-boton{
+    background-color: green;
+    border: 1px solid white;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+}
+
+.boton{
+    width: 80px;
+    transition: ease 1s;
+}

@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-transform: uppercase;
@@ -10,10 +10,11 @@
     background-color: rgb(236, 229, 235);
 }
 
-header{
+header {
     display: flex;
 }
-.logo{
+
+.logo {
     display: flex;
     overflow: hidden;
     border-radius: 50%;
@@ -22,15 +23,18 @@ header{
     width: 90%;
     padding: 15px;
     margin-bottom: 15px;
-    }
-.logo img{
+}
+
+.logo img {
     width: 300px;
     border-radius: 50%;
 }
-.titulo{
+
+.titulo {
     text-align: center;
 }
-.titulo h1{
+
+.titulo h1 {
     font-size: 75px;
     line-height: 8opx;
     text-transform: uppercase;
@@ -43,60 +47,68 @@ nav ul {
     right: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
-nav li{
+
+nav li {
     display: inline-flex;
 }
-nav a{
+
+nav a {
     font-weight: 600;
     padding: 20px;
     width: 150px;
 }
-nav ul a:hover{
-    background-color:rgb(202, 147, 209)
 
+nav ul a:hover {
+    background-color: rgb(202, 147, 209)
 }
-.categorias{
+
+.categorias {
     font-weight: 600;
     padding: 20px;
     width: 150px;
     ce
-
 }
-.contenido{
+
+.contenido {
     display: flex;
     width: 80%;
     margin: auto;
     margin-top: 50px;
 }
-.contenido .articulo{
+
+.contenido .articulo {
     width: 70%;
     margin: auto;
 }
-.contenido .articulo div{
+
+.contenido .articulo div {
     width: 90%;
     padding: 15px;
     background-color: plum;
     border-radius: 15px;
     margin-bottom: 15px;
 }
-.contenido .articulo img{
+
+.contenido .articulo img {
     width: 200px;
     border-radius: 15px;
 }
-.contenido .secundario{
+
+.contenido .secundario {
     width: 30%;
 }
-.contenido .secundario img{
+
+.contenido .secundario img {
     width: 200px;
     border-radius: 15px;
 }
-.contenido .secundario p{
-     border-radius: 15px;
-     padding: 20px;
-     height: 600px;
+
+.contenido .secundario p {
+    border-radius: 15px;
+    padding: 20px;
+    height: 600px;
 }
-.piedepaguna{
-    
-}
+
+.piedepaguna {}

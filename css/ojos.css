@@ -72,20 +72,23 @@ body {
 .content h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    text-align: left;
+    margin-left: 100px;
 }
 
 .content .results {
     font-size: 14px;
     margin-bottom: 20px;
     text-align: center;
+    margin-top: -50px;
 }
 
 .content .sort {
     font-size: 14px;
-    text-align: right;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-left: 840px;
+    margin-top: -40px;
 }
+
 
 .content .sort select {
     border: 1px solid #ddd;
@@ -123,6 +126,7 @@ body {
 .product h3 {
     font-size: 16px;
     margin: 10px 0;
+    
 }
 
 .product p {

@@ -10,9 +10,12 @@ function validarContrasenas() {
     }
 
     if (contrasena === confirmarContrasena) {
-        alert("Registro exitoso");
-        // Aquí puedes agregar la lógica para enviar el formulario
+        console.log("Procesando");
+        setTimeout(() => {
+            alert("Registro exitoso");
+        }, 3000);
     } else {
         alert("Las contraseñas no coinciden");
     }
 }
+

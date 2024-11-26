@@ -1,50 +1,123 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
-.login-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-}
-h2 {
+
+.container {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
     text-align: center;
 }
-.form-group {
-    margin-bottom: 15px;
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-input[type="text"],
-input[type="password"] {
-    width: 100%;
+
+.tabs button {
+    flex: 1;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-input[type="submit"] {
-    background-color: #5cb85c;
-    color: white;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.tabs .active {
+    background: linear-gradient(to right, #3a84e9, #70c6ff);
+}
+
+.tabs button:not(.active) {
+    background: #dcdcdc;
+    color: #555;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dcdcdc;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a.facebook {
+    background-color: #3b5998;
+}
+
+.social-icons a.twitter {
+    background-color: #1da1f2;
+}
+
+.social-icons a.google {
+    background-color: #db4437;
+}
+
+.form-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #555;
+}
+
+.form-group input {
     width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 2px solid #3a84e9;
+    outline: none;
+    font-size: 14px;
 }
-input[type="submit"]:hover {
-    background-color: #4cae4c;
+
+.form-group .remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
-.footer {
-    text-align: center;
-    margin-top: 15px;
+
+.form-group .remember label {
+    font-size: 12px;
+}
+
+.btn-submit {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, #3a84e9, #70c6ff);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    opacity: 0.9;
 }

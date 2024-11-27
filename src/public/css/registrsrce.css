@@ -4,16 +4,16 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #e86b85;
+    background-color: #ffe6e6;
     font-family: Arial, sans-serif;
 }
 .container {
-    background-color: #e86b85;
+    background-color: #ffe6e6;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     width: 300px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .container h1 {
     font-size: 24px;
@@ -28,7 +28,7 @@ body {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #c9c4c4;
     border-radius: 5px;
 }
 .container button {
@@ -37,8 +37,8 @@ body {
     margin: 10px auto; /* Centrar el botón */
     border: none;
     border-radius: 20px; /* Más redondeado */
-    background-color: #1E90FF;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     cursor: pointer;
     display: block; /* Asegurar que el botón se centre */
@@ -65,11 +65,11 @@ body {
     margin-right: 10px;
 }
 .container .google {
-    background-color: #4285F4;
+    background-color: #5548e3;
 }
 .container .facebook {
     background-color: #3B5998;
 }
 .container .apple {
-    background-color: #000000;
+    background-color: #6f6f6f;
 }

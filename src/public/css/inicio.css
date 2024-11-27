@@ -28,7 +28,7 @@ body {
 .content h2 {
     font-size: 37.8px;
     /* Increased font size by 5% */
-    color: #333333;
+    color: #ec55f1;
 }
 
 .content p {
@@ -39,7 +39,7 @@ body {
 
 .card {
     display: inline-block;
-    border: 1px solid #007bff;
+    border: 1px solid #dc94d8;
     border-radius: 10.5px;
     /* Increased border radius by 5% */
     padding: 21px;
@@ -60,7 +60,7 @@ body {
 }
 
 .card h3 {
-    color: #007bff;
+    color: #ef7cef;
     font-size: 18.9px;
     /* Increased font size by 5% */
     margin: 10.5px 0;
@@ -78,17 +78,13 @@ body {
 
 .card button {
     margin-top: 21px;
-    /* Increased margin to move button further down */
     padding: 12px 24px;
-    /* Increased padding by 20% */
-    background-color: #007bff;
+    background-color: #e150ee;
     color: #ffffff;
     border: none;
     border-radius: 5.25px;
-    /* Increased border radius by 5% */
     cursor: pointer;
     font-size: 18px;
-    /* Increased font size by 20% */
 }
 
 .card button:hover {

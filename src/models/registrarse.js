@@ -13,6 +13,7 @@ function validarContrasenas() {
         console.log("Procesando");
         setTimeout(() => {
             alert("Registro exitoso");
+            window.location.href = "/src/views/inicio.html";
         }, 3000);
     } else {
         alert("Las contraseñas no coinciden");

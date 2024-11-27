@@ -2,13 +2,20 @@ header {
     display: flex;
     height: 70px;
     background-color: rgb(235, 149, 213);
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: aliceblue;
+}
+nav.wpp.cart-icon {
+    color: #f2f2f2;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-header nav ul{
 
-}
 
 
 
@@ -55,11 +62,13 @@ nav ul {
 }
 nav li{
     display: inline-flex;
+    
 }
 nav a{
     /* font-weight: 600; */
     padding: 20px;
     width: 150px;
+    text-decoration: none;
 }
 nav ul a:hover{
     background-color:rgb(202, 147, 209)

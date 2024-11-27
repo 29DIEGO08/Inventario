@@ -3,28 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión - Propietario</title>
+    <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="/src/public/css/sesion2.css">
 </head>
 <body>
-
+    <button class="back-button" onclick="goBack()">Regresar</button>
     <div class="login-container">
-        <h2>Iniciar Sesión</h2>
-        <form action="tu_script_de_autenticacion.php" method="POST">
-            <div class="form-group">
-                <label for="username">Nombre de Usuario</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <input type="submit" value="Iniciar Sesión">
+        <form class="login-form">
+            <h2>Iniciar Sesión</h2>
+            <label for="username">Nombre de Usuario</label>
+            <input type="text" id="username" name="username" placeholder="Ingrese su usuario">
+            <label for="password">Clave</label>
+            <input type="password" id="password" name="password" placeholder="Ingrese su clave">
+            <button type="button" onclick="window.location.href='/src/views/controlpro.htm';">Iniciar Sesión</button>
+
         </form>
-        <div class="footer">
-            <p><a href="#">¿Olvidaste tu contraseña?</a></p>
-        </div>
     </div>
 
+    <script src="/src/models/sesion2.js"></script>
 </body>
 </html>

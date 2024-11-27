@@ -1,0 +1,102 @@
+header {
+    display: flex;
+    height: 70px;
+    background-color: rgb(235, 149, 213);
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+
+}
+
+
+
+
+/* *{
+   padding: 0;
+   margin: 0;
+   text-transform: uppercase;
+   color: rgb(136, 42, 165);
+   text-decoration: solid;
+   text-align: center;
+   background-color: rgb(236, 229, 235);
+} */
+
+
+.logo{
+    display: flex;
+    overflow: hidden;
+    border-radius: 150px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 15px;
+    }
+.logo img{
+    width: 300px;
+    border-radius: 150px;
+}
+.titulo{
+    text-align: center;
+}
+.titulo h1{
+    font-size: 75px;
+    line-height: 8opx;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+nav ul {
+    padding: 80px;
+    display: flex;
+  
+}
+nav li{
+    display: inline-flex;
+}
+nav a{
+    /* font-weight: 600; */
+    padding: 20px;
+    width: 150px;
+}
+nav ul a:hover{
+    background-color:rgb(202, 147, 209)
+
+}
+.contenido{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.contenido .articulo{
+    width: 70%;
+    margin: auto;
+}
+.contenido .articulo div{
+    width: 90%;
+    padding: 15px;
+    background-color: plum;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.contenido .articulo img{
+    width: 200px;
+    border-radius: 15px;
+}
+
+.piedepaguina{
+    display: flex;
+    justify-content: center;
+}
+.piedepaguina .wpp{
+    display: flex;    
+}
+.piedepaguina .wpp img{
+  width: 200px;
+  height:200px;
+  margin-right: 25px;
+  border-radius: 100px;    
+}

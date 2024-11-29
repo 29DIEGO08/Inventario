@@ -1,6 +1,6 @@
 header {
     display: flex;
-    height: 70px;
+    height: 100px;
     background-color: rgb(235, 149, 213);
     justify-content: center;
     align-items: center;
@@ -9,16 +9,6 @@ header {
     text-decoration: none;
     color: aliceblue;
 }
-nav.wpp.cart-icon {
-    color: #f2f2f2;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-
-
-
-
 
 /* *{
    padding: 0;
@@ -40,19 +30,23 @@ nav.wpp.cart-icon {
     width: 90%;
     padding: 15px;
     margin-bottom: 15px;
+   
+
     }
 .logo img{
     width: 300px;
     border-radius: 150px;
+    background-color: rgb(235, 149, 213);
 }
-.titulo{
+.logo h1{
     text-align: center;
 }
-.titulo h1{
-    font-size: 75px;
+.logo h1{
+    font-size: 65px;
     line-height: 8opx;
     text-transform: uppercase;
     margin-bottom: 35px;
+    color:  rgb(235, 149, 213);
 }
 
 nav ul {
@@ -74,27 +68,85 @@ nav ul a:hover{
     background-color:rgb(202, 147, 209)
 
 }
+.carrucel{
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    animation: slide 15s infinite alternate ease-in-out  ;
+}
+.carrucel ul{
+  display: flex;
+  padding: 0;
+ 
+ 
+}
+.carrucel li{
+    width: 100%;
+    list-style: none;
+
+}
+.carrucel img{
+    width: 100%;
+}
+@keyframes slide{
+    0% { margin-left: 0%;}
+    20% { margin-left: 0%;}
+
+    25% { margin-left: -100%;}
+    30% { margin-left: -100%;}
+
+    35% { margin-left: -200%;}
+    40% { margin-left: -200%;}
+
+   
+}
+.parrafo{
+    text-align: center;
+}
+.parrafo p{
+    font-size: 55px;
+    line-height: 65px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color:  rgb(235, 149, 213);
+}
 .contenido{
-    display: flex;
+    /* display: flex;
     width: 80%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 50px; */
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 .contenido .articulo{
-    width: 70%;
-    margin: auto;
+    height: auto;
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;  
 }
+
 .contenido .articulo div{
-    width: 90%;
     padding: 15px;
     background-color: plum;
     border-radius: 15px;
     margin-bottom: 15px;
+    
 }
+.articulo a{
+   text-decoration: none;
+   text-transform: uppercase;
+   color: blueviolet;
+}
+
 .contenido .articulo img{
-    width: 200px;
-    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
 }
+
 
 .piedepaguina{
     display: flex;
